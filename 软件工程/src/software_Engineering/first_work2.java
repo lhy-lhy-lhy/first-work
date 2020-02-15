@@ -1,4 +1,4 @@
-package first_work2;
+package chinese_compilation;
 
 import java.util.*;
 
