@@ -171,6 +171,7 @@ class three_unary {
 			System.out.println("未找到变量");
 		else {
 			if(a0[2].equals("大于")) {
+				
 				if (r1.transition_chinese(a1[c1][3]) > r1.transition_chinese(a0[3])) {
 					int c2 = -1;
 					for (int i = 0; i < 4; i++) {
@@ -186,8 +187,9 @@ class three_unary {
 						if (a0[6].equals("减少")) {
 							a1[c2][3] = r2.transition_chinese(r1.transition_chinese(a1[c2][3]) - r1.transition_chinese(a0[7]));
 						}
-						if(a0[5].equals("看看")) System.out.println(a0[6]);
+						
 					}
+					else if(a0[5].equals("看看")) System.out.println(a0[6]);
 
 				}
 				else {System.out.println(a0[9]);}
@@ -209,7 +211,7 @@ class three_unary {
             				a1[c2][3] = r2.transition_chinese(r1.transition_chinese(a1[c2][3]) - r1.transition_chinese(a0[7]));
             			}
             		}
-            		if(a0[5].equals("看看")) System.out.println(a0[6]);
+            		else if(a0[5].equals("看看")) System.out.println(a0[6]);
 
             	}
             	else {System.out.println(a0[9]);}
